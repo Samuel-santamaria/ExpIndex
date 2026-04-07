@@ -362,11 +362,6 @@
 <body>
   <div class="container">
 
-    <div class="page-header">
-      <h1>📊 Calculadora EXP Index</h1>
-      <p>Ingresa los valores de cada métrica para calcular el índice de experiencia del flujo. El resultado se actualiza en tiempo real.</p>
-    </div>
-
     <div class="section-label">Métricas de entrada</div>
 
     <div class="metrics-grid">
@@ -498,17 +493,7 @@
 
         <p class="result-action" id="result-action">Requiere intervención activa — priorizar en el backlog actual.</p>
       </div>
-    </div>
-
-    <div class="section-label">Fórmula de normalización</div>
-    <div class="formula-box">
-      <p>Cada métrica se normaliza a 0–100 antes de aplicar los pesos:</p>
-      <p><code>CES</code> → <code>((7 − raw) / 6) × 100</code></p>
-      <p><code>TCT</code> → <code>max(0, (1 − (T_real − T_ideal) / (T_max − T_ideal))) × 100</code></p>
-      <p><code>Abandono</code> → <code>(1 − tasa) × 100</code></p>
-      <p><code>CSAT</code> → <code>((raw − 1) / 4) × 100</code></p>
-      <p style="margin-top:10px;"><strong>EXP Index</strong> = <code>(CES×0.35) + (TCT×0.25) + (Abandono×0.25) + (CSAT×0.15)</code></p>
-    </div>
+  
 
     <div class="section-label">Escala de resultados</div>
     <table class="scale-table">
